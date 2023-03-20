@@ -1,0 +1,45 @@
+[package]
+name = "dyanechi-github"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+homepage.workspace = true
+repository.workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+sycamore = { workspace = true }
+thiserror = { workspace = true }
+
+dy-app = { workspace = true }
+
+[profile.release]
+panic = 'abort'
+codegen-units = 1
+opt-level = 's'
+lto = "fat"
+
+
+[workspace]
+members = [
+    "packages/*"
+]
+
+[workspace.package]
+name = "dyanechi-github"
+version = "0.1.0"
+edition = "2021"
+authors = ["Dawid Janeczko"]
+homepage = "https://dyanechi.github.io"
+repository = "https://dyanechi.github.com/dyanechi.github.io"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace.dependencies]
+anyhow = "1.0.70"
+sycamore = { git = "https://github.com/sycamore-rs/sycamore" }
+thiserror = "1.0.40"
+
+dy-app = { path = "packages/dy-app" }
+dy-macro = { path = "packages/dy-macro" }
+dy-utils = { path = "packages/dy-utils" }

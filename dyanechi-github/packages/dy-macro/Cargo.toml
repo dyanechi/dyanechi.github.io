@@ -1,0 +1,15 @@
+[package]
+name = "dy-macro"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+homepage.workspace = true
+repository.workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+sycamore = { workspace = true }
+thiserror = { workspace = true }
+
+dy-utils = { workspace = true }
+regex = "1.7.1"
