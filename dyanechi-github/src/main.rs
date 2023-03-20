@@ -26,8 +26,6 @@ fn run() -> Result<(), BuildError> {
         }
     });
     
-
     println!("Success!");
-
     Ok(())
 }
