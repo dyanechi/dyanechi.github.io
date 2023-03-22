@@ -18,8 +18,3 @@ macro_rules! view_component {
         }
     };
 }
-
-// View<G $($(,$ret)*)?>
-
-
-// view_component! {Name}

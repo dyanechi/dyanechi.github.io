@@ -8,12 +8,6 @@ use dy_macro::{style::*, css};
 
 #[component]
 pub fn App<G: Html>(cx: Scope) -> View<G> {
-    // let css = "some";
-    // let app_css = css!({
-    //     display: "flex";
-    //     padding: "3em";
-    //     background_color: "green";
-    // });
 
     view! { cx,
         div(class="") {  }

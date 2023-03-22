@@ -126,7 +126,6 @@ pub fn build_css() {
     let css_index = css_dir.join("index.css");
     let css_root = css_dir.join("root.css");
     
-    // if !css_dir.exists() { fs::create_dir_all(&css_dir).unwrap(); }
     if !css_tmp_dir.exists() { eprintln!("WARN!: No css files exist. Tried to load from: {}", css_tmp_dir.display()); return; } 
     
     if css_index.exists() { remove_file(&css_index).unwrap(); }
